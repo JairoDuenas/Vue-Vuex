@@ -1,3 +1,8 @@
+# Proyecto del Curso Manejo del Estado con Vuex
+
+## Captura de chat
+![Captura de vue y deploy](.readme-static/captura-vuex.png)
+
 # chat-app
 
 This template should help get you started developing with Vue 3 in Vite.
