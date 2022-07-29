@@ -21,6 +21,14 @@ const module = {
           read: false,
           channelId: 2,
         },
+        {
+          id: 3,
+          author: 2,
+          message: "Canal 2 - mensaje 2",
+          timestamp: new Date().toLocaleTimeString(),
+          read: false,
+          channelId: 2,
+        },
       ],
     };
   },

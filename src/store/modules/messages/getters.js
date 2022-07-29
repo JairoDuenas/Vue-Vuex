@@ -4,8 +4,10 @@ const getters = {
       (message) => message.channelId === parseInt(channelId)
     );
   },
-  getMessage: (state) => (id) => {
-    return state.messages.find((message) => message.id === id);
+  getUnreadMessages: (state, getters) => (channelId) => {
+    return getters
+      .getMessages(channelId)
+      .filter((message) => message.read === false).length;
   },
 };
 export default getters;
