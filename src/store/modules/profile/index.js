@@ -3,13 +3,18 @@ import {
   COMMIT_SET_STATUS,
 } from "@/common/mutation-types.js";
 import { getUser } from "@/api";
-import { root } from "postcss";
 
 const module = {
   namespaced: true,
   state() {
     return {
+      id: 1,
       username: "",
+      details: {
+        id: 1,
+        name: "Diana Nerd",
+        avatar: "/avatars/avatar.jpg",
+      },
     };
   },
   getters: {
